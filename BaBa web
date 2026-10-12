@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ========================= -->
+<!-- AXIOM HERO LOGO + TEXT -->
+<!-- ========================= -->
+
+<style>
+
+.hero{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+/* Logo + Text Container */
+
+.hero-logo{
+
+    position:absolute;
+    top:100px;
+    right:1%;
+    z-index:10;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    animation:floatLogo 5s ease-in-out infinite;
+
+}
+
+/* Text */
+
+.hero-logo-text{
+
+    color:#00d4ff;
+    font-size:.8rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    white-space:nowrap;
+
+    text-shadow:
+    0 0 10px rgba(0,212,255,.5);
+
+}
+
+/* Logo */
+
+.hero-logo img{
+
+    width:130px;
+    height:auto;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+    filter:
+    drop-shadow(0 0 10px rgba(0,212,255,.35))
+    drop-shadow(0 0 25px rgba(76,127,255,.25));
+
+}
+
+.hero-logo img:hover{
+
+    transform:scale(1.08);
+
+    filter:
+    drop-shadow(0 0 15px #00d4ff)
+    drop-shadow(0 0 30px #4c7fff)
+    drop-shadow(0 0 45px #00d4ff);
+
+}
+
+@keyframes floatLogo{
+
+0%{transform:translateY(0px);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0px);}
+
+}
+
+@media (max-width:900px){
+
+.hero-logo{
+
+    top:55px;
+    right:15px;
+    gap:10px;
+
+}
+
+.hero-logo-text{
+
+    font-size:.6rem;
+
+}
+
+.hero-logo img{
+
+    width:90px;
+
+}
+
+}
+
+</style>
+
+<div class="hero-logo">
+
+    <div class="hero-logo-text">
+        We 
+        
+         <img src="https://i.postimg.cc/m2GYqc2X/dont-3-0.png" alt="DON'T" class="dont-img">
+        Replace Employees
+    </div>
+
+    <img src="https://i.postimg.cc/QNcYYKrp/logo.png" alt="Axiom AI Logo">
+
+</div>
+
+</div>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+
+      background: #07092d;
+      color: white;
+      overflow-x: hidden;
+
+    }
+
+    /* Scroll Bar */
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+
+      background: #00f7ff;
+      border-radius: 30px;
+
+    }
+
+    /* Navigation */
+
+    nav {
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(3, 5, 40, .80);
+      backdrop-filter: blur(15px);
+      z-index: 1000;
+
+    }
+
+    .logo {
+
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #00ffff;
+      text-shadow: 0 0 20px cyan;
+
+    }
+
+    nav ul {
+
+      display: flex;
+      list-style: none;
+      gap: 40px;
+
+    }
+
+    nav ul li a {
+
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: .4s;
+
+    }
+
+    nav ul li a:hover {
+
+      color: #00ffff;
+
+    }
+
+    /* HERO */
+
+    .hero {
+
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 8%;
+
+    }
+
+    .hero-content {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+
+    }
+
+    .left h1 {
+
+      font-size: 65px;
+      line-height: 75px;
+      margin-bottom: 25px;
+
+    }
+
+    .left h1 span {
+
+      color: #00ffff;
+      text-shadow: 0 0 30px cyan;
+
+    }
+
+    .left p {
+
+      font-size: 18px;
+      line-height: 34px;
+      color: #ddd;
+      margin-bottom: 40px;
+
+    }
+
+    .buttons {
+
+      display: flex;
+      gap: 20px;
+
+    }
+
+    .btn {
+
+      padding: 16px 40px;
+      background: #00d9ff;
+      color: black;
+      font-weight: 700;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: .4s;
+
+    }
+
+    .btn:hover {
+
+      transform: translateY(-6px);
+      box-shadow: 0 0 35px cyan;
+
+    }
+
+    .btn2 {
+
+      background: transparent;
+      border: 2px solid cyan;
+      color: white;
+
+    }
+
+    .btn2:hover {
+
+      background: cyan;
+      color: black;
+
+    }
+
+    .right {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .right img {
+
+      width: 100%;
+      max-width: 550px;
+      border-radius: 20px;
+      box-shadow: 0 0 60px rgba(0, 255, 255, .45);
+
+    }
+
+    /* floating glow */
+
+    .glow {
+
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      background: cyan;
+      filter: blur(200px);
+      opacity: .08;
+      border-radius: 50%;
+
+    }
+
+    .glow.one {
+
+      top: -100px;
+      left: -150px;
+
+    }
+
+    .glow.two {
+
+      bottom: -150px;
+      right: -100px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="glow one"></div>
+  <div class="glow two"></div>
+
+  <nav>
+
+    <div class="logo">
+      AXIOM
+    </div>
+
+    <ul>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="ai-agents.html">AI Agents</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="left">
+
+        <h1>
+          The Future of
+          <span>AI Automation</span>
+          Starts Here
+        </h1>
+
+        <p>
+
+        Increase productivity with powerful AI Agents built specifically for your company.
+        Our AI solutions streamline repetitive tasks while helping your team perform better—not replacing them.</p>
+        <div class="buttons">
+
+        <a href="axiom_contact.html" class="btn">Get Started</a>
+
+          <a href="about.html" class="btn btn2">
+            Learn More
+          </a>
+
+        </div>
+        <style>
+
+.hero-info{
+
+    margin-top:30px;
+
+    max-width:650px;
+
+    color:#d6d6d6;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    text-shadow:0 0 8px rgba(255,255,255,.05);
+
+}
+
+.hero-info p{
+
+    margin:0 0 12px;
+
+}
+
+.hero-info strong{
+
+    color:#00d4ff;
+
+    font-weight:700;
+
+}
+
+</style>
+
+<div class="hero-info">
+
+    <p>
+        <strong>We 
+              <img src="https://i.postimg.cc/MTx3qsWK/check-3-0.png" alt="DON'T" class="dont-img">
+                the efficiency and productivity</strong> of companies, offices, and corporations through intelligent AI automation. 
+      </p>
+       
+      <p>We 
+          <img src="https://i.postimg.cc/7LzjxG06/change.png" alt="DON'T" class="dont-img">
+         customize  every AI agent to fit your business's unique capacity, workflow, and operational needs.</p>
+    
+
+
+</div>
+
+      </div>
+
+      <div class="right">
+
+        <img src= https://thumbs.dreamstime.com/b/ai-robot-hand-points-touch-glowing-circuit-board-digital-tech-concept-futuristic-cyber-space-robotic-arm-touches-data-network-385670632.jpg>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ========================= -->
+<!-- TAILORED INVESTMENT -->
+<!-- ========================= -->
+
+<style>
+  .pricing {
+
+    background: #050814;
+
+    padding: 110px 20px;
+
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .pricing-container {
+
+    max-width: 980px;
+
+    margin: auto;
+
+    text-align: center;
+
+  }
+
+  .pricing h1 {
+
+    font-size: 58px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin-bottom: 18px;
+
+    letter-spacing: -1px;
+
+  }
+
+  .pricing .subtitle {
+
+    max-width: 620px;
+
+    margin: 0 auto 70px;
+
+    font-size: 18px;
+
+    line-height: 34px;
+
+    color: #4c7fff;
+
+    font-weight: 400;
+
+  }
+
+  .pricing-card {
+
+    background: #0b1226;
+
+    border: 1px solid rgba(73, 120, 255, .65);
+
+    border-radius: 18px;
+
+    padding: 52px;
+
+    text-align: left;
+
+    max-width: 920px;
+
+    margin: auto;
+
+    transition: .35s;
+
+    box-shadow:
+
+      0 0 0 rgba(0, 0, 0, 0),
+
+      0 0 30px rgba(38, 89, 255, .05);
+
+  }
+
+  .pricing-card:hover {
+
+    border-color: #4d8dff;
+
+    box-shadow:
+
+      0 0 35px rgba(55, 140, 255, .18);
+
+    transform: translateY(-4px);
+
+  }
+
+  .pricing-card p {
+
+    font-size: 18px;
+
+    line-height: 36px;
+
+    color: #7d8fb9;
+
+    margin-bottom: 32px;
+
+  }
+
+  .pricing-card h3 {
+
+    color: #ffffff;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    margin-bottom: 28px;
+
+  }
+
+  .features {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    margin-bottom: 40px;
+
+  }
+
+  .feature {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+  }
+
+  .icon {
+
+    width: 20px;
+
+    height: 20px;
+
+    border: 2px solid #4c7fff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #4c7fff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-top: 4px;
+
+    flex-shrink: 0;
+
+  }
+
+  .feature span {
+
+    font-size: 17px;
+
+    color: #7d8fb9;
+
+    line-height: 30px;
+
+  }
+
+  .quote {
+
+    margin-top: 25px;
+
+    padding-left: 22px;
+
+    border-left: 3px solid #4c7fff;
+
+    font-size: 21px;
+
+    font-style: italic;
+
+    font-weight: 700;
+
+    line-height: 40px;
+
+    color: #ffffff;
+
+  }
+
+  @media(max-width:768px) {
+
+    .pricing h1 {
+
+      font-size: 42px;
+
+    }
+
+    .pricing-card {
+
+      padding: 35px;
+
+    }
+
+    .pricing-card p {
+
+      font-size: 16px;
+
+      line-height: 32px;
+
+    }
+
+    .quote {
+
+      font-size: 18px;
+
+      line-height: 34px;
+
+    }
+
+  }
+</style>
+
+<section class="pricing">
+
+  <div class="pricing-container">
+
+    <h1>
+
+      Tailored Investment
+
+    </h1>
+
+    <p class="subtitle">
+
+      Our AI agents are not off-the-shelf products — they are precision-engineered solutions designed exclusively for
+      your business.
+
+    </p>
+
+    <div class="pricing-card">
+
+      <p>
+
+        Every engagement begins with understanding your operations, objectives, and workflow. We then customize your AI
+        agent to seamlessly integrate with your organization and perform at the highest level.
+
+      </p>
+
+      <h3>
+
+        Your investment is based on:
+
+      </h3>
+
+      <div class="features">
+
+        <div class="feature">
+
+          <div class="icon">✓</div>
+
+          <span>Business size and operational requirements</span>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="icon">✓</div>
+
+          <span>Scope and sophistication of the AI agent</span>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="icon">✓</div>
+
+          <span>Level of automation, integrations, and ongoing optimization</span>
+
+        </div>
+
+      </div>
+
+      <p>
+
+        The result is a bespoke AI solution that delivers enterprise-grade performance, exceptional efficiency, and
+        long-term business value.
+
+      </p>
+
+      <div class="quote">
+
+        Because excellence is never one-size-fits-all, every proposal is individually crafted.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ========================= -->
+<!-- PREMIUM EFFECTS -->
+<!-- ========================= -->
+
+<style>
+  /* Floating Background Glow */
+
+  .pricing::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(circle, #4c7fff22 0%, transparent 70%);
+
+    left: -180px;
+
+    top: -150px;
+
+    filter: blur(40px);
+
+    animation: floatOne 12s ease-in-out infinite;
+
+    pointer-events: none;
+
+  }
+
+  .pricing::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(circle, #4c7fff18 0%, transparent 70%);
+
+    right: -170px;
+
+    bottom: -170px;
+
+    filter: blur(45px);
+
+    animation: floatTwo 14s ease-in-out infinite;
+
+    pointer-events: none;
+
+  }
+
+  @keyframes floatOne {
+
+    0% {
+
+      transform: translateY(0px);
+
+    }
+
+    50% {
+
+      transform: translateY(45px);
+
+    }
+
+    100% {
+
+      transform: translateY(0px);
+
+    }
+
+  }
+
+  @keyframes floatTwo {
+
+    0% {
+
+      transform: translateY(0px);
+
+    }
+
+    50% {
+
+      transform: translateY(-35px);
+
+    }
+
+    100% {
+
+      transform: translateY(0px);
+
+    }
+
+  }
+
+  /* Smooth Fade-In */
+
+  .pricing-container {
+
+    animation: fadeUp 1.2s ease;
+
+  }
+
+  @keyframes fadeUp {
+
+    0% {
+
+      opacity: 0;
+
+      transform: translateY(40px);
+
+    }
+
+    100% {
+
+      opacity: 1;
+
+      transform: translateY(0);
+
+    }
+
+  }
+
+  /* Better text rendering */
+
+  .pricing * {
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+  }
+
+  /* Selection Color */
+
+  .pricing ::selection {
+
+    background: #4c7fff;
+
+    color: white;
+
+  }
+
+  /* Scrollbar (Chrome/Edge) */
+
+  ::-webkit-scrollbar {
+
+    width: 10px;
+
+  }
+
+  ::-webkit-scrollbar-track {
+
+    background: #050814;
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+
+    background: #355fd9;
+
+    border-radius: 20px;
+
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+
+    background: #4c7fff;
+
+  }
+</style>
+<!-- ========================= -->
+<!-- HOW IT WORKS -->
+<!-- ========================= -->
+
+<style>
+  .process {
+
+    background: #050814;
+
+    padding: 120px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+  }
+
+  .process-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+
+  }
+
+  .process h1 {
+
+    font-size: 60px;
+
+    font-weight: 700;
+
+    color: white;
+
+    margin-bottom: 20px;
+
+  }
+
+  .process-subtitle {
+
+    font-size: 18px;
+
+    color: #4c7fff;
+
+    max-width: 700px;
+
+    margin: 0 auto 70px;
+
+    line-height: 34px;
+
+  }
+
+  .process-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+
+  }
+
+  .process-card {
+
+    background: #0b1226;
+
+    border: 1px solid rgba(76, 127, 255, .45);
+
+    border-radius: 18px;
+
+    padding: 45px 35px;
+
+    transition: .35s;
+
+    position: relative;
+
+    overflow: hidden;
+
+  }
+
+  .process-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    background: radial-gradient(circle, #4c7fff25 0%, transparent 70%);
+
+    top: -120px;
+
+    right: -120px;
+
+    transition: .4s;
+
+  }
+
+  .process-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: #5e9bff;
+
+    box-shadow: 0 0 40px rgba(76, 127, 255, .18);
+
+  }
+
+  .process-card:hover::before {
+
+    transform: scale(1.4);
+
+  }
+
+  .step-number {
+
+    font-size: 64px;
+
+    font-weight: 700;
+
+    color: #4c7fff;
+
+    margin-bottom: 18px;
+
+  }
+
+  .process-card h2 {
+
+    font-size: 24px;
+
+    color: white;
+
+    margin-bottom: 18px;
+
+  }
+
+  .process-card p {
+
+    font-size: 17px;
+
+    line-height: 30px;
+
+    color: #7d8fb9;
+
+  }
+</style>
+
+<section class="process">
+
+  <div class="process-container">
+
+    <h1>How It Works</h1>
+
+    <p class="process-subtitle">
+
+      A simple four-step process designed to deliver an enterprise-grade AI solution tailored specifically for your
+      business.
+
+    </p>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+
+        <div class="step-number">01</div>
+
+        <h2>Discovery Call</h2>
+
+        <p>
+
+          We learn about your operations, pain points, and objectives during a focused 30-minute strategy session.
+
+        </p>
+
+      </div>
+
+      <div class="process-card">
+
+        <div class="step-number">02</div>
+
+        <h2>Custom Scoping</h2>
+
+        <p>
+
+          Our engineers design an AI architecture tailored specifically to your workflows, software, and operational
+          requirements.
+
+        </p>
+
+      </div>
+
+      <div class="process-card">
+
+        <div class="step-number">03</div>
+
+        <h2>Proposal Delivery</h2>
+
+        <p>
+
+          Receive a detailed proposal including project scope, timeline, integrations, and investment with complete
+          transparency.
+
+        </p>
+
+      </div>
+
+      <div class="process-card">
+
+        <div class="step-number">04</div>
+
+        <h2>Deploy & Optimize</h2>
+
+        <p>
+
+          We build, launch, monitor, and continuously optimize your AI solution to ensure peak performance.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ========================= -->
+<!-- CALL TO ACTION -->
+<!-- ========================= -->
+
+<style>
+  .cta {
+
+    background:
+
+      radial-gradient(circle at center, #1a4cff22 0%, transparent 45%),
+
+      linear-gradient(180deg, #050814, #09142d);
+
+    padding: 140px 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+  }
+
+  .cta::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+
+    height: 700px;
+
+    background: radial-gradient(circle, #4c7fff20 0%, transparent 70%);
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    filter: blur(30px);
+
+    animation: pulse 8s infinite ease-in-out;
+
+  }
+
+  @keyframes pulse {
+
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+  }
+
+  .cta-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    margin: auto;
+
+  }
+
+  .cta h1 {
+
+    font-size: 64px;
+
+    color: white;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+  }
+
+  .cta h1 span {
+
+    color: #4c7fff;
+
+  }
+
+  .cta p {
+
+    font-size: 20px;
+
+    color: #7d8fb9;
+
+    line-height: 36px;
+
+    margin-bottom: 55px;
+
+  }
+
+  .cta-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+  }
+
+  .cta-buttons a {
+
+    text-decoration: none;
+
+    padding: 18px 42px;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+  }
+
+  .proposal-btn {
+
+    background: linear-gradient(135deg, #4c7fff, #2c5fff);
+
+    color: white;
+
+    box-shadow: 0 0 25px rgba(76, 127, 255, .35);
+
+  }
+
+  .proposal-btn:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 0 45px rgba(76, 127, 255, .55);
+
+  }
+
+  .sales-btn {
+
+    border: 1px solid #4c7fff;
+
+    color: #4c7fff;
+
+    background: transparent;
+
+  }
+
+  .sales-btn:hover {
+
+    background: #4c7fff;
+
+    color: white;
+
+    transform: translateY(-6px);
+
+  }
+</style>
+
+<section class="cta">
+
+  <div class="cta-content">
+
+    <h1>
+
+      Ready to Get Your <span>Custom Proposal?</span>
+
+    </h1>
+
+    <p>
+
+      Tell us about your business and we'll scope a solution built around your goals.
+
+    </p>
+
+    <div class="cta-buttons">
+
+      <a href="#contact" class="proposal-btn">
+
+        Request a Proposal
+
+      </a>
+
+      <a href="#contact" class="sales-btn">
+
+        Talk to Sales
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- ========================= -->
+  <!-- ABOUT SECTION -->
+  <!-- ========================= -->
+  
+  <style>
+    .about {
+  
+      padding: 120px 8%;
+      background: #050720;
+  
+    }
+  
+    .title {
+  
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 70px;
+      font-weight: 700;
+  
+    }
+  
+    .title span {
+  
+      color: #00ffff;
+      text-shadow: 0 0 20px cyan;
+  
+    }
+  
+    .about-grid {
+  
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 35px;
+  
+    }
+  
+    .card {
+  
+      background: #10153f;
+      padding: 40px;
+      border-radius: 25px;
+      transition: .5s;
+      border: 1px solid rgba(0, 255, 255, .15);
+  
+    }
+  
+    .card:hover {
+  
+      transform: translateY(-15px);
+      box-shadow: 0 0 40px rgba(0, 255, 255, .4);
+  
+    }
+  
+    .card h2 {
+  
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00ffff;
+  
+    }
+  
+    .card p {
+  
+      line-height: 32px;
+      font-size: 17px;
+      color: #ddd;
+  
+    }
+  
+    /* SERVICES */
+  
+    .services {
+  
+      padding: 120px 8%;
+  
+    }
+  
+    .service-boxes {
+  
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+  
+    }
+  
+    .service {
+  
+      background: #10143c;
+      padding: 35px;
+      border-radius: 25px;
+      transition: .4s;
+  
+    }
+  
+    .service:hover {
+  
+      transform: scale(1.04);
+  
+      box-shadow: 0 0 40px cyan;
+  
+    }
+  
+    .service h3 {
+  
+      margin: 25px 0;
+      font-size: 28px;
+  
+    }
+  
+    .service p {
+  
+      line-height: 30px;
+      color: #d5d5d5;
+  
+    }
+  
+    .icon {
+  
+      font-size: 60px;
+  
+    }
+  
+    .stats {
+  
+      padding: 120px 8%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 40px;
+      text-align: center;
+  
+    }
+  
+    .stat {
+  
+      background: #11143f;
+      padding: 45px;
+      border-radius: 25px;
+      min-width: 250px;
+  
+    }
+  
+    .stat h1 {
+  
+      font-size: 60px;
+      color: #00ffff;
+  
+    }
+  
+    .stat p {
+  
+      margin-top: 15px;
+      font-size: 20px;
+  
+    }
+  </style>
+  
+  <section class="about">
+  
+    <h1 class="title">
+      About <span>Axiom AI</span>
+    </h1>
+  
+    <div class="about-grid">
+  
+      <div class="card">
+  
+        <h2>Who We Are</h2>
+  
+        <p>
+  
+          At Axiom AI Builders Team, we create intelligent AI agents that automate workflows, improve productivity, and
+          help businesses operate faster and more efficiently.
+  
+        </p>
+  
+      </div>
+  
+      <div class="card">
+  
+        <h2>Our Mission</h2>
+  
+        <p>
+  
+          We do NOT replace employees.
+          We enhance their capabilities by giving businesses AI assistants that eliminate repetitive work and improve
+          daily operations.
+  
+        </p>
+  
+      </div>
+  
+      <div class="card">
+  
+        <h2>Custom AI Agents</h2>
+  
+        <p>
+  
+          Every AI agent is built according to your company's size, workflow, and specific business needs, ensuring
+          maximum productivity and growth.
+  
+        </p>
+  
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <section class="services">
+  
+    <h1 class="title">
+  
+      Our <span>Solutions</span>
+  
+    </h1>
+  
+    <div class="service-boxes">
+  
+      <div class="service">
+  
+        <div class="icon">🤖</div>
+  
+        <h3>AI Agents</h3>
+  
+        <p>
+  
+          Custom intelligent assistants that answer customers, organize data, automate tasks, and work 24/7.
+  
+        </p>
+  
+      </div>
+  
+      <div class="service">
+  
+        <div class="icon">⚡</div>
+  
+        <h3>Automation</h3>
+  
+        <p>
+  
+          Connect your CRM, Email, Website, and Business Software into one seamless automated workflow.
+  
+        </p>
+  
+      </div>
+  
+      <div class="service">
+  
+        <div class="icon">📈</div>
+  
+        <h3>Business Growth</h3>
+  
+        <p>
+  
+          Reduce operating costs while increasing productivity, speed, and customer satisfaction.
+  
+        </p>
+  
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <section class="stats">
+  
+    <div class="stat">
+  
+      <h1>24/7</h1>
+  
+      <p>AI Availability</p>
+  
+    </div>
+  
+    <div class="stat">
+  
+      <h1>100%</h1>
+  
+      <p>Custom Solutions</p>
+  
+    </div>
+  
+    <div class="stat">
+  
+      <h1>500+</h1>
+  
+      <p>Processes Automated</p>
+  
+    </div>
+  
+    <div class="stat">
+  
+      <h1>∞</h1>
+  
+      <p>Scalability</p>
+  
+    </div>
+  
+  </section>
+  <!-- ========================= -->
+  <!-- AI AGENTS SECTION -->
+  <!-- ========================= -->
+  
+  <style>
+    .ai-section {
+  
+      padding: 120px 8%;
+      background: #06092a;
+  
+    }
+  
+    .ai-wrapper {
+  
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+  
+    }
+  
+    .ai-image img {
+  
+      width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 0 60px rgba(0, 255, 255, .35);
+  
+    }
+  
+    .ai-text h1 {
+  
+      font-size: 55px;
+      margin-bottom: 30px;
+  
+    }
+  
+    .ai-text h1 span {
+  
+      color: #00ffff;
+  
+    }
+  
+    .ai-text p {
+  
+      font-size: 18px;
+      line-height: 34px;
+      margin-bottom: 30px;
+      color: #ddd;
+  
+    }
+  
+    .feature {
+  
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 25px 0;
+  
+    }
+  
+    .check {
+  
+      width: 60px;
+      height: 60px;
+      background: #00ffff;
+      color: black;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 28px;
+  
+    }
+  
+    .feature h3 {
+  
+      font-size: 24px;
+  
+    }
+  
+    .feature p {
+  
+      margin-top: 8px;
+      color: #ccc;
+  
+    }
+  
+    @media(max-width:900px) {
+  
+      .hero-content,
+      .ai-wrapper {
+  
+        grid-template-columns: 1fr;
+  
+      }
+  
+      .left {
+  
+        text-align: center;
+  
+      }
+  
+      .buttons {
+  
+        justify-content: center;
+  
+      }
+  
+    }
+  </style>
+  
+  <section class="ai-section">
+  
+    <div class="ai-wrapper">
+  
+      <div class="ai-image">
+  
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8U-duJPwTgYahTQsJCpxAigDzP_Yd4BmZYf5h2OjqMA&s=10">
+  
+      </div>
+  
+      <div class="ai-text">  
+  
+        <h1>
+  
+          Your <span>AI Workforce</span>
+  
+        </h1>
+  
+        <p>
+  
+          Our AI agents work around the clock to answer customers, automate repetitive work, organize data, schedule
+          appointments, generate reports, and improve business efficiency.
+  
+        </p>
+  
+        <div class="feature">
+  
+          <div class="check">✓</div>
+  
+          <div>
+  
+            <h3>Customer Support</h3>
+  
+            <p>24/7 AI assistants for customers.</p>
+  
+          </div>
+  
+        </div>
+  
+        <div class="feature">
+  
+          <div class="check">✓</div>
+  
+          <div>
+  
+            <h3>Office Automation</h3>
+  
+            <p>Automate emails, forms, scheduling, and documentation.</p>
+  
+          </div>
+  
+        </div>
+  
+        <div class="feature">
+  
+          <div class="check">✓</div>
+  
+          <div>
+  
+            <h3>Productivity</h3>
+  
+            <p>Increase employee efficiency instead of replacing them.</p>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </section>
+  <!-- ========================= -->
+  <!-- WHY CHOOSE US -->
+  <!-- ========================= -->
+  
+  <style>
+    .why {
+  
+      padding: 120px 8%;
+      background: #04061d;
+  
+    }
+  
+    .why-grid {
+  
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 35px;
+  
+    }
+  
+    .why-card {
+  
+      background: #11153c;
+      padding: 45px;
+      border-radius: 25px;
+      transition: .4s;
+      border: 1px solid rgba(0, 255, 255, .2);
+  
+    }
+  
+    .why-card:hover {
+  
+      transform: translateY(-12px);
+      box-shadow: 0 0 40px cyan;
+  
+    }
+  
+    .why-card h2 {
+  
+      font-size: 28px;
+      margin: 25px 0;
+      color: #00ffff;
+  
+    }
+  
+    .why-card p {
+  
+      line-height: 30px;
+      color: #ddd;
+  
+    }
+  
+    .circle {
+  
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #00ffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: #08102f;
+  
+    }
+  </style>
+  
+  <section class="why">
+  
+    <h1 class="title">
+  
+      Why <span>Axiom AI</span>
+  
+    </h1>
+  
+    <div class="why-grid">
+  
+      <div class="why-card">
+  
+        <div class="circle">⚙️</div>
+  
+        <h2>Custom Built</h2>
+  
+        <p>
+  
+          Every AI agent is designed specifically around your business processes and workflow.
+  
+        </p>
+  
+      </div>
+  
+      <div class="why-card">
+  
+        <div class="circle">🚀</div>
+  
+        <h2>Fast Deployment</h2>
+  
+        <p>
+  
+          Launch your AI solution quickly with professional implementation and support.
+  
+        </p>
+  
+      </div>
+  
+      <div class="why-card">
+  
+        <div class="circle">🔒</div>
+  
+        <h2>Secure</h2>
+  
+        <p>
+  
+          Enterprise-grade security and reliable automation you can trust.
+  
+        </p>
+  
+      </div>
+  
+      <div class="why-card">
+  
+        <div class="circle">📊</div>
+  
+        <h2>Scalable</h2>
+  
+        <p>
+  
+          Whether you're a startup or a large corporation, our AI grows with your business.
+  
+        </p>
+  
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <!-- ========================= -->
+  <!-- CONTACT -->
+  <!-- ========================= -->
+  
+  <style>
+    .contact {
+  
+      padding: 120px 8%;
+      background: #06092c;
+  
+    }
+  
+    .contact-box {
+  
+      max-width: 900px;
+      margin: auto;
+      background: #10153d;
+      padding: 60px;
+      border-radius: 30px;
+  
+    }
+  
+    .contact-box h1 {
+  
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 40px;
+  
+    }
+  
+    .contact-box span {
+  
+      color: #00ffff;
+  
+    }
+  
+    form {
+  
+      display: grid;
+      gap: 25px;
+  
+    }
+  
+    input {
+  
+      padding: 18px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      background: #18204d;
+      color: white;
+  
+    }
+  
+    textarea {
+  
+      height: 180px;
+      padding: 20px;
+      font-size: 18px;
+      resize: none;
+      border: none;
+      border-radius: 12px;
+      background: #18204d;
+      color: white;
+  
+    }
+  
+    button {
+  
+      padding: 18px;
+      border: none;
+      background: #00ffff;
+      color: #08102f;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: .4s;
+  
+    }
+  
+    button:hover {
+  
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px cyan;
+  
+    }
+  </style>
+  
+  <section class="contact">
+  
+    <div class="contact-box">
+  
+      <h1>
+  
+        Contact <span>Us</span>
+  
+      </h1>
+  
+      <form>
+  
+        <input type="text" placeholder="Your Name">
+  
+        <input type="email" placeholder="Email Address">
+  
+        <input type="text" placeholder="Business Name">
+  
+        <textarea placeholder="Tell us about your project..."></textarea>
+  
+        <button>
+  
+  Request Consultation
+  
+  </button>
+  
+      </form>
+  
+    </div>
+  
+  </section>
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+  
+  <style>
+    footer {
+  
+      background: #020318;
+      padding: 80px 8%;
+  
+    }
+  
+    .footer-grid {
+  
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 50px;
+  
+    }
+  
+    .footer-column h2 {
+  
+      color: #00ffff;
+      margin-bottom: 25px;
+  
+    }
+  
+    .footer-column p {
+  
+      line-height: 30px;
+      color: #cfcfcf;
+  
+    }
+  
+    .footer-column ul {
+  
+      list-style: none;
+  
+    }
+  
+    .footer-column li {
+  
+      margin: 15px 0;
+  
+    }
+  
+    .footer-column a {
+  
+      color: white;
+      text-decoration: none;
+      transition: .3s;
+  
+    }
+  
+    .footer-column a:hover {
+  
+      color: #00ffff;
+  
+    }
+  
+    .bottom {
+  
+      margin-top: 60px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+      padding-top: 30px;
+      color: #bbb;
+  
+    }
+  
+    .social {
+  
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+  
+    }
+  
+    .social div {
+  
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #00ffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #08102f;
+      transition: .4s;
+  
+    }
+  
+    .social div:hover {
+  
+      transform: rotate(360deg);
+  
+    }
+  </style>
+  
+  <footer>
+  
+    <div class="footer-grid">
+  
+      <div class="footer-column">
+  
+        <h2>AXIOM AI</h2>
+  
+        <p>
+  
+          Building intelligent AI solutions that help businesses become faster, smarter, and more productive.
+  
+        </p>
+  
+        <div class="social">
+  
+          <div>📧</div>
+  
+          <div>🌐</div>
+  
+          <div>📱</div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="footer-column">
+  
+        <h2>Services</h2>
+  
+        <ul>
+  
+          <li><a href="#">AI Agents</a></li>
+  
+          <li><a href="#">Automation</a></li>
+  
+          <li><a href="#">Consulting</a></li>
+  
+          <li><a href="#">Business AI</a></li>
+  
+        </ul>
+  
+      </div>
+  
+      <div class="footer-column">
+  
+        <h2>Contact</h2>
+         
+         <h3><strong>Email</strong></h3>
+        <p> Ai@Axiomspace.us</p>
+        <h3><strong>Support Email</strong></h3>
+        <p>
+  
+          layth@Axiomspace.us
+  
+        </p>
+          
+        <h3><strong>Live Chat:</strong></h3>
+        <p> Available 9am-6pm ET</p>
+        <p><strong>Based in San Francisco, CA </strong></p>
+          
+        
+  
+      </div>
+  
+    </div>
+  
+    <div class="bottom">
+  
+      © 2026 Axiom AI Builders Team. All Rights Reserved. <strong>Based in San Francisco, CA</strong>
+  
+    </div>
+  
+  </footer>
+  <!-- ========================= -->
+  <!-- BACK TO TOP BUTTON -->
+  <!-- ========================= -->
+  
+  <style>
+    #topBtn {
+  
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      background: #00ffff;
+      color: #07102e;
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+      transition: .35s;
+      box-shadow: 0 0 25px cyan;
+      z-index: 999;
+  
+    }
+  
+    #topBtn:hover {
+  
+      transform: translateY(-8px) scale(1.1);
+  
+    }
+  
+    .fade {
+  
+      opacity: 0;
+      transform: translateY(80px);
+      transition: 1s;
+  
+    }
+  
+    .fade.active {
+  
+      opacity: 1;
+      transform: translateY(0);
+  
+    }
+  
+    .hero::before {
+  
+      content: "";
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(cyan, transparent 70%);
+      opacity: .08;
+      filter: blur(40px);
+      animation: spinGlow 20s linear infinite;
+  
+    }
+  
+    @keyframes spinGlow {
+  
+      0% {
+  
+        transform: rotate(0deg) scale(1);
+  
+      }
+  
+      50% {
+  
+        transform: rotate(180deg) scale(1.15);
+  
+      }
+  
+      100% {
+  
+        transform: rotate(360deg) scale(1);
+  
+      }
+  
+    }
+  
+    .service,
+    .card,
+    .why-card,
+    .stat {
+  
+      transition: .45s;
+  
+    }
+  
+    .service:hover,
+    .card:hover,
+    .why-card:hover,
+    .stat:hover {
+  
+      transform: translateY(-10px);
+  
+      box-shadow: 0 0 40px rgba(0, 255, 255, .45);
+  
+    }
+  
+    body {
+  
+      background-image:
+        radial-gradient(circle at top left, #0a2d62 0%, transparent 30%),
+        radial-gradient(circle at bottom right, #003d4d 0%, transparent 35%);
+  
+    }
+  </style>
+  
+  <button id="topBtn">
+  
+  ↑
+  
+  </button>
+  <script>
+    const topBtn=document.getElementById("topBtn");
+  
+  window.addEventListener("scroll",()=>{
+  
+  if(window.scrollY>300){
+  
+  topBtn.style.display="block";
+  
+  }else{
+  
+  topBtn.style.display="none";
+  
+  }
+  
+  });
+  
+  topBtn.onclick=()=>{
+  
+  window.scrollTo({
+  
+  top:0,
+  
+  behavior:"smooth"
+  
+  });
+  
+  };
+  
+  const observer=new IntersectionObserver((entries)=>{
+  
+  entries.forEach(entry=>{
+  
+  if(entry.isIntersecting){
+  
+  entry.target.classList.add("active");
+  
+  }
+  
+  });
+  
+  });
+  
+  document.querySelectorAll("section").forEach(section=>{
+  
+  section.classList.add("fade");
+  
+  observer.observe(section);
+  
+  });
+  
+  const cards=document.querySelectorAll(".card,.service,.why-card,.stat");
+  
+  cards.forEach(card=>{
+  
+  card.addEventListener("mouseenter",()=>{
+  
+  card.style.transform="translateY(-12px)";
+  
+  });
+  
+  card.addEventListener("mouseleave",()=>{
+  
+  card.style.transform="translateY(0px)";
+  
+  });
+  
+  });
+  
+  const navLinks=document.querySelectorAll("nav a");
+  
+  navLinks.forEach(link=>{
+  
+  link.addEventListener("mouseenter",()=>{
+  
+  link.style.textShadow="0 0 15px cyan";
+  
+  });
+  
+  link.addEventListener("mouseleave",()=>{
+  
+  link.style.textShadow="none";
+  
+  });
+  
+  });
+  
+  </script>
+  <!-- ========================= -->
+  <!-- END OF WEBSITE -->
+  <!-- ========================= -->
